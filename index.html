@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8" />
     <title>VRFI.site</title>
@@ -17,21 +18,6 @@
         background-size: 100vw;
         background-image: url("Основа.png");
     }
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>My Money - Учет расходов и доходов</title>
-    <style>
-        /* Общие стили */
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #1e3a8a, #6b46c1, #9b59b6);
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
 
     .zoom {
         transition: transform 0.5s;
@@ -40,20 +26,12 @@
         padding: 0;
         border: none;
     }
-        a {
-            color: #ffed4a;
-            text-decoration: none;
-            font-weight: bold;
-        }
 
     .zoom:hover {
         transform: scale(1.1);
         /* (150% зум - Примечание: если масштаб слишком велик, он будет выходить за пределы видового экрана) */
         cursor: pointer;
     }
-        a:hover {
-            color: #fbbf24;
-        }
 
     .zoom2 {
         transition: transform 0.5s;
@@ -62,32 +40,16 @@
         padding: 0;
         border: none;
     }
-        /* Стили для хедера */
-        header {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
 
     .zoom2:hover {
         transform: scale(1.05);
         /* (150% зум - Примечание: если масштаб слишком велик, он будет выходить за пределы видового экрана) */
     }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
 
     * {
         -webkit-user-select: none;
     }
 </style>
-        nav {
-            margin-top: 10px;
-        }
 
 <body>
     <div id="container" ; style="width: 100%; height: 100%; position: relative; background: #111111">
@@ -398,36 +360,6 @@
             left: 0px;
             top: 295px;
             position: absolute;
-        nav a {
-            margin: 0 15px;
-            font-size: 1.2rem;
-            color: #fff;
-        }
-        /* Секции главной страницы */
-        section {
-            padding: 50px 20px;
-            text-align: center;
-        }
-        .hero {
-            background: linear-gradient(135deg, #6b46c1, #1e3a8a);
-            padding: 100px 20px;
-        }
-        .hero h2 {
-            font-size: 2.8rem;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 1.3rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .cta-button {
-            background-color: #ffed4a;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            color: #1e3a8a;
-            font-size: 1.2rem;
             cursor: pointer;
           ">
                 <img style="
@@ -622,35 +554,17 @@
             </div>
         </div>
     </div>
-            margin-top: 20px;
-        }
 
     <script>
         function forcedOriginalScale(containerId) {
             var App = document.getElementById(containerId); //получаем div по его id
             App.style.zoom = 1 / devicePixelRatio; //устанавливаем масштаб в зависимости от pixel-ratio
-        .cta-button:hover {
-            background-color: #fbbf24;
         }
 
         document.addEventListener(
             //когда DOM загрузился
-        /* Функции приложения */
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 20px;
-        }
 
             "DOMContentLoaded",
-        .feature {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 300px;
-            text-align: left;
-        }
 
             function () {
                 forcedOriginalScale("container"); //выполняем функцию, передаём в неё id нашего контейнера
@@ -658,10 +572,5 @@
         );
     </script>
 </body>
-        .feature h3 {
-            margin-top: 0;
-            color: #ffed4a;
-        }
 
 </html>
-       
