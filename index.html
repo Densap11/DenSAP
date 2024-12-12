@@ -559,7 +559,18 @@
             function () {
                 forcedOriginalScale("container"); //выполняем функцию, передаём в неё id нашего контейнера
             }
+            
         );
+
+        // Функция для проверки мобильного устройства
+        function isMobileDevice() {
+            return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        }
+
+        // Перенаправление на мобильную версию
+        if (isMobileDevice()) {
+            window.location.href = "mobile.html"; // Укажите путь к вашей мобильной версии HTML
+        }
     </script>
 </body>
 </html>
