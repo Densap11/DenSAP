@@ -13,6 +13,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
+    <script>
+        // Функция для проверки мобильного устройства
+        function isMobileDevice() {
+            return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        }
+
+        // Перенаправление на мобильную версию
+        if (isMobileDevice()) {
+            window.location.href = "mobile.html"; // Укажите путь к вашей мобильной версии HTML
+        }
+    </script>
     <header>
         <logo>VRFI</logo>
         <vk_tg>
